@@ -22,6 +22,27 @@ class WkKlarnaApiExtensionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test if the Client has the correct params set
+     */
+    public function testValidConfigurationIsLoaded()
+    {
+        $config = $this->getValidConfig();
+        $container = $this->createCompiledContainerForConfig($config);
+
+        /**
+         * @var $klarna \Klarna
+         */
+        $klarna = $container->get('wk_klarna_api');
+        $this->assertAttributeEquals(123, '_eid', $klarna);
+        $this->assertAttributeEquals('aSecret', '_secret', $klarna);
+        $this->assertAttributeEquals(\KlarnaCountry::DE, '_country', $klarna);
+        $this->assertAttributeEquals(\KlarnaLanguage::DE, '_language', $klarna);
+        $this->assertAttributeEquals(\KlarnaCurrency::EUR, '_currency', $klarna);
+        $this->assertAttributeEquals(0, 'mode', $klarna);
+    }
+
+
+    /**
      * Test if the Configuration can be Loaded and the Container has the correct Service
      */
     public function testLoadConfiguration()
@@ -57,7 +78,7 @@ class WkKlarnaApiExtensionTest extends \PHPUnit_Framework_TestCase
     private function getValidConfig()
     {
         $config = array(
-            'merchant_id' => 'aMerchentId',
+            'merchant_id' => 123,
             'secret'      => 'aSecret',
             'country'     => \KlarnaCountry::DE,
             'language'    => \KlarnaLanguage::DE,

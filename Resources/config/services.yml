@@ -1,3 +1,22 @@
+parameters:
+  wk_klarna_api.merchant_id: ~
+  wk_klarna_api.secret: ~
+  wk_klarna_api.country: ~
+  wk_klarna_api.language: ~
+  wk_klarna_api.currency: ~
+  wk_klarna_api.mode: ~
+
 services:
+  wk_klarna_client_factory:
+    class: Wk\KlarnaApiBundle\Factory\ClientFactory
   wk_klarna_api:
     class: \Klarna
+    factory: ["@wk_klarna_client_factory", createClient]
+    arguments:
+      - "%wk_klarna_api.merchant_id%"
+      - "%wk_klarna_api.secret%"
+      - "%wk_klarna_api.country%"
+      - "%wk_klarna_api.language%"
+      - "%wk_klarna_api.currency%"
+      - "%wk_klarna_api.mode%"
+
