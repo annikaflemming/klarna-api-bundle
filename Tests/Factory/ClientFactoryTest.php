@@ -9,6 +9,10 @@ use KlarnaLanguage;
 use PHPUnit_Framework_TestCase;
 use Wk\KlarnaApiBundle\Factory\ClientFactory;
 
+// what a hack for travis
+$GLOBALS['xmlrpcName'] = 'This is a Test';
+$GLOBALS['xmlrpcVersion'] = '0.0';
+
 /**
  * Class WkKlarnaApiClientFactoryTest
  */
