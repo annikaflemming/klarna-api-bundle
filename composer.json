@@ -2,11 +2,11 @@
     "name": "asgoodasnu/klarnaapibundle",
     "description": "Integrates the Klarna RPC XML API into a symfony2 bundle",
     "require": {
-        "klarna/php-xmlrpc": "4.0"
+        "klarna/php-xmlrpc": "4.0",
+        "symfony/framework-bundle": "^3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.1",
-        "symfony/framework-bundle": "^3.0"
+        "phpunit/phpunit": "^5.1"
     },
     "authors": [
         {
