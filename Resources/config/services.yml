@@ -1,0 +1,3 @@
+services:
+  wk_klarna_api:
+    class: \Klarna

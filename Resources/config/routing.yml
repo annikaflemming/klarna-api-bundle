@@ -1,0 +1,3 @@
+wk_klarna_api_homepage:
+    path:     /
+    defaults: { _controller: WkKlarnaApiBundle:Default:index }
