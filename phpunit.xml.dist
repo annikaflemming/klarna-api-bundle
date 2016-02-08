@@ -5,7 +5,7 @@
          bootstrap="./vendor/autoload.php" colors="true">
 
     <testsuites>
-        <testsuite name="WkKLarenaApiBundle test suite">
+        <testsuite name="WkKlarnaApiBundle test suite">
             <directory suffix="Test.php">./Tests</directory>
         </testsuite>
     </testsuites>
