@@ -1,6 +1,6 @@
 # WkKlarnaApiBundle
 
-[![Build Status](https://travis-ci.org/asgoodasnu/klarnaapi-bundle.png?branch=master)](https://travis-ci.org/asgoodasnu/klarnaapi-bundle) [![Total Downloads](https://poser.pugx.org/asgoodasnu/klarnaapi-bundle/d/total.png)](https://packagist.org/packages/asgoodasnu/klarnaapi-bundle) [![Latest Stable Version](https://poser.pugx.org/asgoodasnu/klarnaapi-bundle/v/stable.png)](https://packagist.org/packages/asgoodasnu/klarnaapi-bundle)
+[![Build Status](https://travis-ci.org/asgoodasnu/klarna-api-bundle.png?branch=master)](https://travis-ci.org/asgoodasnu/klarna-api-bundle) [![Total Downloads](https://poser.pugx.org/asgoodasnu/klarna-api-bundle/d/total.png)](https://packagist.org/packages/asgoodasnu/klarna-api-bundle) [![Latest Stable Version](https://poser.pugx.org/asgoodasnu/klarna-api-bundle/v/stable.png)](https://packagist.org/packages/asgoodasnu/klarna-api-bundle)
 
 The WkKlarnaApiBundle wraps the Klarna PHPXML Api as a Symfony Bundle 
 
@@ -9,7 +9,7 @@ Installation
 
 Require the bundle and its dependencies with composer:
 
-    $ composer require asgoodasnu/klarnaapi-bundle
+    $ composer require asgoodasnu/klarna-api-bundle
     
 Register the bundle:
 
