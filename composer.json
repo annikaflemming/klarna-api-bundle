@@ -5,7 +5,7 @@
     "require": {
         "php": ">=5.5",
         "klarna/php-xmlrpc": "4.0",
-        "symfony/framework-bundle": "^3.0"
+        "symfony/framework-bundle": ">=2.6"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.8"
